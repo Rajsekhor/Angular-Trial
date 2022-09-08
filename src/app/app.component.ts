@@ -8,4 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'first-app';
   count = 1;
+  decreaseCount=() => {
+    console.log("Button Clicked")
+    this.count--;
+  }
+  increaseCount=() => {
+    console.log("Button Clicked")
+    this.count++;
+  }
 }

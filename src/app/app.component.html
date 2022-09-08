@@ -1,3 +1,5 @@
 <h1>{{title}}</h1>
 <h1>{{count}}</h1>
-<h1 *ngIf="count > 0">I ma visible if I ma greater than 0</h1>
+<h1 *ngIf="count > 0">I am visible if I am greater than 0</h1>
+<button (click)="decreaseCount()">Decrement</button>
+<button (click)="increaseCount()">Increment</button>
