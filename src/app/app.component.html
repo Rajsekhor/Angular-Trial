@@ -1,13 +1,16 @@
-<h1>{{title}}</h1>
-<h1>{{count}}</h1>
-<!-- If conditons -->
-<h1 *ngIf="count > 0">I am visible if I am greater than 0</h1>
-<h1 *ngIf="count < 0">I am visible if I am less than 0</h1>
-<!-- On click events -->
-<button (click)="decreaseCount()">Decrement</button>
-<button (click)="increaseCount()">Increment</button>
-<!-- For loop conditions -->
-<li *ngFor="let number of listOfNumbers">{{number}}</li>
-<li *ngFor="let name of listOfNames">{{name}}</li>
-<!-- Two way binding -->
-<input type="text" [(ngModel)]="title">
+<div class="outer">
+  <h1 style="text-align: center;">{{title}}</h1>
+  <section>
+
+    <label>Number 1</label>
+    <label><input type="number" [(ngModel)]="num1"><br></label>
+    <label>Number 2</label>
+    <label><input type="number" [(ngModel)]="num2"><br></label>
+    <label>Operation(+, -, * or /)</label>
+    <label><input type="text" [(ngModel)]="sym"><br></label>
+
+    <label><button (click)="calc()">Calculate</button></label>
+    <label><h2>Your Answer : {{value}}</h2><h2 *ngIf="cnt!=0">{{value}}</h2></label>
+  </section>
+</div>
+  <h2 *ngIf="cnt!=0">{{value}}</h2>

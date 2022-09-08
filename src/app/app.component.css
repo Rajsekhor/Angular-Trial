@@ -1,0 +1,21 @@
+section{
+    display: flex;
+    margin: 25px 250px;
+    border: 2px solid brown;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgb(255, 123, 0);
+    flex-direction: column;
+    background-color: linear-gradient(rgb(246, 115, 45),rgb(53, 244, 222));
+}
+
+label{
+    margin: 25px auto;
+    padding :auto 50px;
+    display: inline;
+}
+
+.outer{
+    background-color:rgb(222, 180, 84);
+    width: 100vw;
+    min-height: 100vh;
+}
