@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+// importing a new module
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -12,6 +14,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
+
+    // add a new import module
     FormsModule
   ],
   providers: [],
