@@ -1,5 +1,8 @@
 <h1>{{title}}</h1>
 <h1>{{count}}</h1>
 <h1 *ngIf="count > 0">I am visible if I am greater than 0</h1>
+<h1 *ngIf="count < 0">I am visible if I am less than 0</h1>
 <button (click)="decreaseCount()">Decrement</button>
 <button (click)="increaseCount()">Increment</button>
+<li *ngFor="let number of listOfNumbers">{{number}}</li>
+<li *ngFor="let name of listOfNames">{{name}}</li>

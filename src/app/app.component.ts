@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'first-app';
   count = 1;
+
+  listOfNumbers = [1, 32, 32, 55]
+  listOfNames = ["Ronnie", "Jack", "Wilbur"]
+
   decreaseCount=() => {
     console.log("Button Clicked")
     this.count--;
