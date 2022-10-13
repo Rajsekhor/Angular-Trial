@@ -6,14 +6,25 @@ import { AppComponent } from './app.component';
 
 // importing a new module
 import { FormsModule } from '@angular/forms';
+import { ToDoComponent } from './todo/todo.component';
+import { TodoAddComponent } from './todo/todo-add/todo-add.component';
+import { TodoListComponent } from './todo/todo-list/todo-list.component';
+import { TrialComponent } from './trial/trial.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ToDoComponent,
+    TodoAddComponent,
+    TodoListComponent,
+    TrialComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
 
     // add a new import module
     FormsModule
@@ -21,4 +32,7 @@ import { FormsModule } from '@angular/forms';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  
+
+}

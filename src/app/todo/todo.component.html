@@ -1,0 +1,6 @@
+<h1>TO DO LIST</h1>
+<input type="text" [(ngModel)]="todoItem" placeholder="Add your Stuffs here">
+<p>{{todoItem}}</p>
+<button (click)="addToDoList()">Add to ToDo List</button>
+
+<li *ngFor="let myTodoItem of todoList">{{myTodoItem}}</li>
